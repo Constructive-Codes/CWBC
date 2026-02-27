@@ -5,7 +5,15 @@ https://github.com/Constructive-Codes/CPro1
 
 It was run using the OpenAI o4-mini model: MODEL="o4-mini-2025-04-16"
 
-These are the two successful CPro1-produced programs, that each succeeded on one Open instance during the CPro1 run:
+Put the following two files in the directory where you will run, replacing the versions you got from the CPro1 repository:
+
+`conf.py` here has the setup for constant weight binary codes.  It matches defaults, except note that:
+- It generates only 200 programs per run, rather than the default of 1000 (STRATEGY_REPS = 10 instead of 50).
+- The code optimization step is turned off ("prog_opt_prompt_eval": None), to save on tokens.
+- PROMPT_NOVELTY = True.  Half the runs in the paper were run with this True, half with it False.
+- PROMPT_NUM_HYPERPARAMETERS = -1.  This turns off the prompt limiting hyperparameters, matching the older behavior of CPro1 that was used for the constant weight binary codes runs.
+
+These are the two successful CPro1-produced programs; each one succeeded on one Open instance during the CPro1 run:
 
 - `reinforcement-learning-cpro1.c` has the "reinforcement learning" approach from CPro1 that led to RSDH as described in the paper.  After compiling, this can be run as follows:
 
