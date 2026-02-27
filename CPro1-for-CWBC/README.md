@@ -7,6 +7,8 @@ It was run using the OpenAI o4-mini model: MODEL="o4-mini-2025-04-16"
 
 Put the following two files in the directory where you will run, replacing the versions you got from the CPro1 repository:
 
+`problem_def.py` has the problem definition and verifier used by CPro1 for constant weight binary codes.
+
 `conf.py` here has the setup for constant weight binary codes.  It matches defaults, except note that:
 - It generates only 200 programs per run, rather than the default of 1000 (STRATEGY_REPS = 10 instead of 50).
 - The code optimization step is turned off ("prog_opt_prompt_eval": None), to save on tokens.
