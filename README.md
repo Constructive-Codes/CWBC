@@ -23,3 +23,5 @@ Each program is single-threaded, but multiple runs can be started on a single ma
 The above programs are based on the automated results from CPro1, but have been further developed by hand, as described in the paper.
 
 The directory **CPro1-for-CWBC/** has the configuration files for CPro1, instructions for running it on this problem, and the original raw code generated automatically by CPro1.
+
+The directory **distance-map-details/** has the code and details for the distance map figure in the paper.
