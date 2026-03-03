@@ -1,6 +1,8 @@
 # Data and code for "Automated Discovery of Improved Constant Weight Binary Codes"
 
-This repository has the data and code for "Automated Discovery of Improved Constant Weight Binary Codes".
+This repository has the data and code for:
+
+C.D. Rosin. (March 2026) “Automated Discovery of Improved Constant Weight Binary Codes.” [https://arxiv.org/pdf/2603.00174](https://arxiv.org/pdf/2603.00174)
 
 The directory **codes/** has the new constant weight binary codes.  Files are named code-n-d-w-s.txt where n is the number of bits, d is the distance, w is the weight, and s is the number of codewords.  The codewords are one per line of the file.
 
